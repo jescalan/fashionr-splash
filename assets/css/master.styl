@@ -1,0 +1,44 @@
+@import '_settings'
+
+normalize()
+base()
+
+body
+  bg: 'bg.jpg'
+  background-size: cover
+
+#phone
+  size: 568 675
+  bg: 'phone.png'
+  fixed: bottom 0 left 0
+
+  img
+    absolute: top 87px left 261px
+
+#copy
+  margin-left: 650px
+  margin-top: 130px
+  color: #fff
+
+  h1
+    ir: 'logo.png' 203px 50px
+    margin-bottom: 40px
+
+  p
+    padding-right: 50px
+    line-height: 1.5em
+    margin-bottom: 35px
+    text-shadow: 1px 1px 1px rgba(#000,.3)
+
+  .button
+    simple-button(#d03d3b, 'large')
+    color: #fff
+    border-bottom: 4px solid #ae312e
+    transition()
+
+    &:hover
+      color: #fff
+
+    &:active
+      margin-top: 4px
+      border-bottom: 1px solid transparent
